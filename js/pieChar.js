@@ -29,7 +29,7 @@ var arcc = d3.svg.arc()
 // Keep track of the node that is currently being displayed as the root.
 var node;
 
-d3.json("../json/data.json", function(error, root) {
+d3.json("json/data.json", function(error, root) {
   console.log(root);
   node = root;
   var pathh = svgg.datum(root).selectAll("path")
