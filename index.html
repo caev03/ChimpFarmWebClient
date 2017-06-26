@@ -1,0 +1,593 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="imgs/favicon.ico">
+
+    <title>ChimpFarm</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand">ChimpFarm</span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Dashboard</a></li>
+            <li class="dropdown">
+              <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Testing Task<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="rgigTest.html"><span class="glyphicon glyphicon-random"></span> RGIG - Random GUI-Input Generation</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-tree-conifer"></span> SE - Systematic Exploration</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Camilo Escobar-Velásquez<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Profile</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>    Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="panel panel-primary z-depth-2">
+            <div class="panel-heading clearfix">
+                <h1 class="panel-title pull-left">Finished Tasks</h1>
+                <a href="#" class="pull-right"><span class="badge"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh</span></a>
+            </div>
+            <div class="panel-body">
+                <ul class="nav nav-tabs">
+                  <li role="presentation" class="active"><a href="#rgigFTable" data-toggle="tab">Random GUI-Input Generation</a></li>
+                  <li role="presentation"><a href="#seFTable" data-toggle="tab">Systematic Exploration</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div id="rgigFTable" class="tab-pane fade in active">
+                    <div class="table-responsive">
+                        <table class="table table-striped"> 
+                            <thead> 
+                                <tr> 
+                                    <th>#</th> 
+                                    <th>Date</th> 
+                                    <th>Version</th> 
+                                    <th>Name</th>
+                                    <th>App Package</th>
+                                    <th>Main Activity</th>
+                                    <th>OS Matrix</th>
+                                    <th>Type Event Distribution</th>
+                                    <th>Event Count</th>
+                                    <th>Manage Task</th> 
+                                </tr> 
+                            </thead> 
+                            <tbody class="text-center"> 
+                                <tr> 
+                                    <th scope=row>1</th> 
+                                    <td>22-Jun-2017</td> 
+                                    <td>2.0</td> 
+                                    <td>Mileague</td>
+                                    <td>com.package.mileague</td>
+                                    <td>Mileague</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">View OS Matrix</button>
+                                        <div id="myModal" class="modal fade" role="dialog">
+                                          <div class="modal-dialog">
+
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Operating System Matrix</h4>
+                                              </div>
+                                              <div class="modal-body table-responsive">
+                                                    <table class="table table-striped"> 
+                                                        <thead> 
+                                                            <tr> 
+                                                                <th>Screen Resolution</th> 
+                                                                <th>KitKat - API19</th> 
+                                                                <th>Lollipop - API20</th> 
+                                                                <th>Marshmallow - API21</th>
+                                                            </tr> 
+                                                        </thead> 
+                                                        <tbody class="text-center"> 
+                                                            <tr> 
+                                                                <th scope=row>320x480x16</th>
+                                                                <td>5</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope=row>480x800x16</th>
+                                                                <td>2</td>
+                                                                <td>2</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope=row>540x960x16</th>
+                                                                <td>0</td>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope=row>1080x1920x32</th>
+                                                                <td>-</td>
+                                                                <td>-</td>
+                                                                <td>3</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-success" style="width: 40%">
+                                                Touch
+                                            </div>
+                                            <div class="progress-bar progress-bar-warning" style="width: 35%">
+                                                Nav
+                                            </div>
+                                            <div class="progress-bar progress-bar-danger" style="width: 25%">
+                                                Motion
+                                            </div>
+                                            <div class="progress-bar progress-bar-primary" style="width: 0%">
+                                                Any Event
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>10.000</td>
+                                    <td>
+                                        <a href="resume.html?id=25436879"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                                        <a href=""><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a> 
+                                        <a href=""><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                                    </td>
+                                </tr>
+                                <tr> 
+                                    <th scope=row>1</th> 
+                                    <td>21-Jun-2017</td> 
+                                    <td>1.5</td> 
+                                    <td>Mileague</td>
+                                    <td>com.package.mileague</td>
+                                    <td>Mileague</td>
+                                    <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">View OS Matrix</button></td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-success" style="width: 20%">
+                                                Touch
+                                            </div>
+                                            <div class="progress-bar progress-bar-info" style="width: 50%">
+                                                Trackball
+                                            </div>
+                                            <div class="progress-bar progress-bar-danger" style="width: 30%">
+                                                Motion
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>15.000</td>
+                                    <td>
+                                        <a href="resume.html"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                                        <a href=""><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a> 
+                                        <a href=""><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                                    </td>
+                                </tr>
+                                <tr> 
+                                    <th scope=row>1</th> 
+                                    <td>20-Jun-2017</td> 
+                                    <td>1.0</td> 
+                                    <td>Mileague</td>
+                                    <td>com.package.mileague</td>
+                                    <td>Mileague</td>
+                                    <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">View OS Matrix</button></td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-danger" style="width: 40%">
+                                                Motion
+                                            </div>
+                                            <div class="progress-bar progress-bar-primary" style="width: 60%">
+                                                Any Event
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>20.000</td>
+                                    <td>
+                                        <a href="resume.html"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                                        <a href=""><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a> 
+                                        <a href=""><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                                    </td>
+                                </tr> 
+                            </tbody> 
+                        </table>
+                        
+                    </div>
+                    <div class="panel-footer text-center">
+                        <nav aria-label="Page navigation">
+                          <ul class="pagination">
+                            <li class="disabled">
+                              <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div id="seFTable" class="tab-pane fade table-responsive">
+                    <table class="table"> 
+                        <thead> 
+                            <tr> 
+                                <th>#</th> 
+                                <th>Date</th> 
+                                <th>Version</th> 
+                                <th>Name</th>
+                                <th>App Package</th>
+                                <th>Task Type</th>  
+                            </tr> 
+                        </thead> 
+                        <tbody> 
+                            <tr> 
+                                <th scope=row>1</th> 
+                                <td>Mark</td> 
+                                <td>Otto</td> 
+                                <td>@mdo</td> 
+                            </tr> 
+                            <tr> 
+                                <th scope=row>2</th> 
+                                <td>Jacob</td> 
+                                <td>Thornton</td> 
+                                <td>@fat</td> 
+                            </tr> 
+                            <tr> 
+                                <th scope=row>3</th> 
+                                <td>Larry</td> 
+                                <td>the Bird</td> 
+                                <td>@twitter</td> 
+                            </tr> 
+                        </tbody> 
+                    </table>
+                    <div class="panel-footer text-center">
+                        <nav aria-label="Page navigation">
+                          <ul class="pagination">
+                            <li>
+                              <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="legend" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Task Queue Color Legend</h4>
+                    </div>
+                    <div class="modal-body table-responsive">
+                        <div class="col-sm-3">
+                            <h4 class="text-center">In Queue</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                </div>
+                            </div>
+                            <p class="text-justify">Percentage of subtasks that have been stored in queue but its processing has not start yet</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4 class="text-center">Processing</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                </div>
+                            </div>
+                            <p class="text-justify">Percentage of subtasks that have been read and are being processed</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4 class="text-center">Running</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                </div>
+                            </div>
+                            <p class="text-justify">Percentage of subtask that are being executed in a linked-container</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4 class="text-center">Finished</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                </div>
+                            </div>
+                            <p class="text-justify">Percentage of subtasks that have been executed and whose result is ready to show</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-info z-depth-2">
+            <div class="panel-heading clearfix">
+                <h1 class="panel-title pull-left">Task Queue</h1>
+                <a href="#" class="pull-right"><span class="badge"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh</span></a>
+                <a href="#" class="pull-right" data-toggle="modal" data-target="#legend" style="margin-right:10px"><span class="badge">Color Legend</span></a>
+            </div>
+            <div class="panel-body">
+                <ul class="nav nav-tabs">
+                  <li role="presentation" class="active"><a href="#rgigTable" data-toggle="tab">Random GUI-Input Generation</a></li>
+                  <li role="presentation"><a href="#seTable" data-toggle="tab">Systematic Exploration</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div id="rgigTable" class="tab-pane fade in active">
+                    <div class="table-responsive">
+                        <table class="table table-striped text-center"> 
+                            <thead> 
+                                <tr> 
+                                    <th>#</th> 
+                                    <th>Date</th> 
+                                    <th>Version</th> 
+                                    <th>Name</th>
+                                    <th>App Package</th>
+                                    <th>Main Activity</th>
+                                    <th>OS Matrix</th>
+                                    <th>Type Event Distribution</th>
+                                    <th>Event Count</th>
+                                    <th width="20%">Status</th>
+                                </tr> 
+                            </thead> 
+                            <tbody> 
+                                <tr> 
+                                    <th scope=row>1</th> 
+                                    <td>24-Jun-2017</td> 
+                                    <td>2.0</td> 
+                                    <td>Mileague</td>
+                                    <td>com.package.mileague</td>
+                                    <td>Mileague</td>
+                                    <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">View OS Matrix</button></td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-success" style="width: 0%">
+                                                Touch
+                                            </div>
+                                            <div class="progress-bar progress-bar-warning" style="width: 100%">
+                                                Nav
+                                            </div>
+                                            <div class="progress-bar progress-bar-danger" style="width: 25%">
+                                                Motion
+                                            </div>
+                                            <div class="progress-bar progress-bar-primary" style="width: 0%">
+                                                Any Event
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>7.000</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%" data-toggle="tooltip" data-placement="top" title="0%">
+                                                
+                                            </div>
+                                            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 5%" data-toggle="tooltip" data-placement="top" title="5%">
+                                                
+                                            </div>
+                                            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 25%" data-toggle="tooltip" data-placement="top" title="25%">
+                                                
+                                            </div>
+                                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 70%" data-toggle="tooltip" data-placement="top" title="45%">
+                                                
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr> 
+                                    <th scope=row>1</th> 
+                                    <td>24-Jun-2017</td> 
+                                    <td>1.5</td> 
+                                    <td>Mileague</td>
+                                    <td>com.package.mileague</td>
+                                    <td>Mileague</td>
+                                    <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">View OS Matrix</button></td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-success" style="width: 100%">
+                                                Touch
+                                            </div>
+                                            <div class="progress-bar progress-bar-info" style="width: 50%">
+                                                Trackball
+                                            </div>
+                                            <div class="progress-bar progress-bar-danger" style="width: 30%">
+                                                Motion
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>5.000</td>
+                                    <td colspan="3">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 70%" data-toggle="tooltip" data-placement="top" title="70%">
+                                                
+                                            </div>
+                                            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 20%" data-toggle="tooltip" data-placement="top" title="20%">
+                                                
+                                            </div>
+                                            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 10%" data-toggle="tooltip" data-placement="top" title="10%">
+                                                
+                                            </div>
+                                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%" data-toggle="tooltip" data-placement="top" title="0%">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr> 
+                                    <th scope=row>1</th> 
+                                    <td>24-Jun-2017</td> 
+                                    <td>1.0</td> 
+                                    <td>Mileague</td>
+                                    <td>com.package.mileague</td>
+                                    <td>Mileague</td>
+                                    <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">View OS Matrix</button></td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-danger" style="width: 0%">
+                                                Motion
+                                            </div>
+                                            <div class="progress-bar progress-bar-primary" style="width: 100%">
+                                                Any Event
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>3.000</td>
+                                    <td colspan="3">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%" data-toggle="tooltip" data-placement="top" title="100%">
+                                                
+                                            </div>
+                                            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                
+                                            </div>
+                                            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                
+                                            </div>
+                                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                        </div>
+                                    </td>
+                                </tr> 
+                            </tbody> 
+                        </table>
+                    </div>
+                    <div class="panel-footer text-center">
+                        <nav aria-label="Page navigation">
+                          <ul class="pagination">
+                            <li>
+                              <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div id="seTable" class="tab-pane fade table-responsive">
+                    <table class="table"> 
+                        <thead> 
+                            <tr> 
+                                <th>#</th> 
+                                <th>Date</th> 
+                                <th>Version</th> 
+                                <th>Name</th>
+                                <th>App Package</th>
+                                <th>Task Type</th>  
+                            </tr> 
+                        </thead> 
+                        <tbody> 
+                            <tr> 
+                                <th scope=row>1</th> 
+                                <td>Mark</td> 
+                                <td>Otto</td> 
+                                <td>@mdo</td> 
+                            </tr> 
+                            <tr> 
+                                <th scope=row>2</th> 
+                                <td>Jacob</td> 
+                                <td>Thornton</td> 
+                                <td>@fat</td> 
+                            </tr> 
+                            <tr> 
+                                <th scope=row>3</th> 
+                                <td>Larry</td> 
+                                <td>the Bird</td> 
+                                <td>@twitter</td> 
+                            </tr> 
+                        </tbody> 
+                    </table>
+                    <div class="panel-footer text-center">
+                        <nav aria-label="Page navigation">
+                          <ul class="pagination">
+                            <li>
+                              <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip(); 
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+$("#inputToE").change( 
+	function(){
+		$("#tobar").css("width",$("#inputToE").val()+"%");
+	}
+);
+$("#inputNav").change( 
+	function(){
+		$("#nbar").css("width",$("#inputNav").val()+"%");
+	}
+);
+$("#inputMot").change( 
+	function(){
+		$("#mbar").css("width",$("#inputMot").val()+"%");
+	}
+);
+$("#inputTrE").change( 
+	function(){
+		$("#trbar").css("width",$("#inputTrE").val()+"%");
+	}
+);
+$("#inputAnE").change( 
+	function(){
+		$("#abar").css("width",$("#inputAnE").val()+"%");
+	}
+);

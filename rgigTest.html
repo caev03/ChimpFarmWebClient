@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="imgs/favicon.ico">
+
+    <title>ChimpFarm</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand">ChimpFarm</span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Dashboard</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Testing Task<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="rgigTest.html"><span class="glyphicon glyphicon-random"></span> RGIG - Random GUI-Input Generation</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-tree-conifer"></span> SE - Systematic Exploration</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Camilo Escobar-Velásquez<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Profile</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>    Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container form-container">
+        <div class="panel panel-primary">
+            <div class="panel-heading clearfix">
+                <h4 class="pull-left">New Random GUI-Input Generation Testing Task</h4>
+            </div>
+            <div class="panel-body">
+                <div class="space col-sm-12">
+                    <div class="col-sm-8">
+                        <div class="col-sm-3">
+                            <h4>Name</h4>
+                        </div>
+                        <div class="col-sm-9">
+                            <label for="inputVersion" class="sr-only">Application Name</label>
+                            <input type="text" id="inputVersion" class="form-control" placeholder="App Name" required autofocus>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="col-sm-3">
+                            <h4>Version</h4>
+                        </div>
+                        <div class="col-sm-9">
+                            <label for="inputName" class="sr-only">Application Version</label>
+                            <input type="text" id="inputName" class="form-control" placeholder="App Version" required autofocus>
+                        </div>
+                    </div>
+                </div>
+                <div class="space col-sm-12">
+                    <div class="col-sm-2">
+                        <h4>APK Path</h4>
+                    </div>
+                    <div class="col-sm-10">
+                        <label for="inputAPK" class="sr-only">Application APK Path</label>
+                        <input type="text" id="inputAPK" class="form-control" placeholder="Repository Path" required autofocus>
+                    </div>
+                </div>
+                <div class="space col-sm-12">
+                    <div class="col-sm-2">
+                        <h4>APK Package</h4>
+                    </div>
+                    <div class="col-sm-10">
+                        <label for="inputPackage" class="sr-only">Application Package</label>
+                        <input type="text" id="inputPackage" class="form-control" placeholder="App Package" required autofocus>
+                    </div>
+                </div>
+                <div class="space col-sm-12">
+                    <div class="col-sm-8">
+                        <div class="col-sm-3">
+                            <h4>Main Activity</h4>
+                        </div>
+                        <div class="col-sm-9">
+                            <label for="inputActivity" class="sr-only">Application Main Activity</label>
+                            <input type="text" id="inputActivity" class="form-control" placeholder="App Name" required autofocus>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="col-sm-6">
+                            <h4>Event Count</h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="inputEventC" class="sr-only">Event Amount</label>
+                            <input type="text" id="inputEventC" class="form-control" placeholder="Event Amount" required autofocus>
+                        </div>
+                    </div>
+                </div>
+                <div class="space col-sm-12 divider"></div>
+                <div class="space col-sm-12 text-center">
+                    <h3>Type Event Distribution ( % )</h3>
+                </div>
+                <div class="space col-sm-12 text-center">
+                    <div class="col-sm-2">
+                        <h4>Touch</h4>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4>Nav</h4>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4>Motion</h4>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>Trackball</h4>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4>Any Event</h4>
+                    </div>
+                </div>
+                <div class="space col-sm-12">
+                    <div class="col-sm-2">
+                        <label for="inputToE" class="sr-only">Touch Amount</label>
+                        <input type="number" min="0" id="inputToE" class="form-control" placeholder="%" required autofocus>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="inputNav" class="sr-only">Navigation Amount</label>
+                        <input type="number" min="0" id="inputNav" class="form-control" placeholder="%" required autofocus>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="inputMot" class="sr-only">Motion Amount</label>
+                        <input type="number" min="0" id="inputMot" class="form-control" placeholder="%" required autofocus>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="inputTrE" class="sr-only">Trackball Amount</label>
+                        <input type="number" min="0" id="inputTrE" class="form-control" placeholder="%" required autofocus>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="inputAnE" class="sr-only">Any Event Amount</label>
+                        <input type="number" min="0" id="inputAnE" class="form-control" placeholder="%" required autofocus>
+                    </div>
+                </div>
+                <div class="space col-sm-12 text-center">
+                    <div class="progress">
+                        <div id="tobar" class="progress-bar progress-bar-success" style="width: 0%">
+                            Touch
+                        </div>
+                        <div id="nbar" class="progress-bar progress-bar-warning" style="width: 0%">
+                            Nav
+                        </div>
+                        <div id="mbar" class="progress-bar progress-bar-danger" style="width: 0%">
+                            Motion
+                        </div>
+                        <div id="trbar" class="progress-bar progress-bar-info" style="width: 0%">
+                            Trackball
+                        </div>
+                        <div id="abar" class="progress-bar progress-bar-primary" style="width: 0%">
+                            Any Event
+                        </div>
+                    </div>
+                </div>
+                <div class="space col-sm-12 divider"></div>
+                <div class="space col-sm-12 text-center">
+                    <h3>Operating System Matrix</h3>
+                </div>
+                <div class="space col-sm-12 text-center">
+                    <div class="table-responsive">
+                        <table class="table table-striped"> 
+                            <thead> 
+                                <tr> 
+                                    <th>Screen Resolution</th> 
+                                    <th>KitKat - API19</th> 
+                                    <th>Lollipop - API20</th> 
+                                    <th>Marshmallow - API21</th>
+                                </tr> 
+                            </thead> 
+                            <tbody class="text-center"> 
+                                <tr> 
+                                    <th scope=row>320x480x16</th>
+                                    <td>
+                                        <label for="inputKK3" class="sr-only">Event Amount</label>
+                                        <input type="number" id="inputKK3" class="form-control" placeholder="# Devices" required autofocus>
+                                    </td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>480x800x16</th>
+                                    <td>
+                                        <label for="inputKK4" class="sr-only">Event Amount</label>
+                                        <input type="number" id="inputKK4" class="form-control" placeholder="# Devices" required autofocus>
+                                    </td>
+                                    <td>
+                                        <label for="inputLP4" class="sr-only">Event Amount</label>
+                                        <input type="number" id="inputLP4" class="form-control" placeholder="# Devices" required autofocus>
+                                    </td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>540x960x16</th>
+                                    <td>
+                                        <label for="inputKK5" class="sr-only">Event Amount</label>
+                                        <input type="number" id="inputKK5" class="form-control" placeholder="# Devices" required autofocus>
+                                    </td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope=row>1080x1920x32</th>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>
+                                        <label for="inputMM1" class="sr-only">Event Amount</label>
+                                        <input type="number" id="inputMM1" class="form-control" placeholder="# Devices" required autofocus>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer clearfix" >
+                <button class="btn btn-md btn-primary pull-right">Submit</button>
+            </div>
+        </div>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
